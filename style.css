@@ -1,0 +1,11 @@
+body {
+    background-color: lightcyan;
+}
+h1, h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#monitorList {
+    table-layout: fixed;
+}
