@@ -1,11 +1,36 @@
 body {
+    margin: 0;
     background-color: lightcyan;
 }
-h1, h3 {
+
+header {
+    padding: 1rem;
+    background-color: #302e2e;
+}
+
+h1, h2, h3 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1, h2 {
+    color: #fff;
+}
+
+section {
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #monitorList {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     table-layout: fixed;
+}
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
