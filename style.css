@@ -8,6 +8,31 @@ body {
     background-color: #302e2e;
 }
 
+nav > ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: teal;
+}
+
+ul > li{
+  float:left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+li a:hover {
+  background-color: white;
+  color: teal;
+}
+
 header {
     padding: 1rem;
     border-bottom: 10px solid teal;
