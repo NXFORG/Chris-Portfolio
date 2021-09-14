@@ -1,20 +1,52 @@
 body {
     margin: 0;
-    background-color: lightcyan;
+    background-color: #989997;
+}
+
+/*Changes background to dark grey*/
+.darkGreyBackground{
+    background-color: #302e2e;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: teal;
+}
+
+ul > li{
+  float:left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+li a:hover {
+  background-color: white;
+  color: teal;
 }
 
 header {
     padding: 1rem;
-    background-color: #302e2e;
+    border-bottom: 10px solid teal;
 }
 
 h1, h2, h3 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
 }
 
-h1, h2 {
-    color: #fff;
+article {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 section {
@@ -22,13 +54,42 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.sectionHeader {
+  color: black;
+}
+
+#introContainer {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#racetrackPicture {
+  max-width: 20%;
+  flex-basis: 20%;
+}
+
+.sectionText {
+  padding: 20px;
+  font-size: 120%;
+}
+
+#tableTitle {
+  background-color: #989997;
+}
+
+/*List of things I like*/
 #likeList {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 20%;
     table-layout: fixed;
+    border-collapse: collapse;
 }
 footer > p {
     font-family: Arial, Helvetica, sans-serif;
