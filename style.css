@@ -1,11 +1,19 @@
-body {
-    margin: 0;
-    background-color: #989997;
+:root {
+  --dark-blue: #060f26;
+  --med-dark-blue: #192238;
+  --dark-grey: #302e2e;
 }
 
-/*Changes background to dark grey*/
-.darkGreyBackground{
-    background-color: #302e2e;
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+  background-color: var(--dark-blue);
 }
 
 nav > ul {
@@ -13,11 +21,13 @@ nav > ul {
   padding: 0;
   overflow: hidden;
   list-style-type: none;
-  background-color: teal;
 }
 
 ul > li{
   float:left;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 li a {
@@ -25,23 +35,37 @@ li a {
   padding: 10px;
   color: white;
   text-decoration: none;
-  font-family: Verdana;
+  border-bottom: 2px solid var(--dark-blue);
 }
 
 li a:hover {
-  background-color: white;
-  color: teal;
+  border-bottom-color: #fff;
 }
 
 header {
     padding: 1rem;
-    border-bottom: 10px solid teal;
+    background: var(--med-dark-blue);
+    border-bottom: 10px solid var(--dark-blue);
 }
 
 h1, h2, h3 {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
+}
+
+header > h2 {
+  margin-top: 50px;
+}
+
+#navTitle {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  float: left;
+  margin-right: 50px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2em;
 }
 
 article {
@@ -51,24 +75,20 @@ article {
 
 section {
     padding: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.sectionHeader {
-  color: black;
 }
 
 #introContainer {
   display: flex;
-  width: 80%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: center;
+  background-color: slategray;
 }
 
 #racetrackPicture {
-  max-width: 20%;
+  max-width: 30%;
   flex-basis: 20%;
 }
 
@@ -77,21 +97,6 @@ section {
   font-size: 120%;
 }
 
-#tableTitle {
-  background-color: #989997;
-}
-
-/*List of things I like*/
-#likeList {
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
 footer > p {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
