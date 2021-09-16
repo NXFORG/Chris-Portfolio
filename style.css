@@ -108,12 +108,10 @@ article > section {
   width: 30%;
   background-color: slategray;
   height: calc(100vh/2.5);
-  border: 2px solid #fff;
   margin: 5px;
 }
 
 article > section:hover {
-  border-color: var(--dark-blue);
   background: url("./images/canary.jpeg");
   background-size: cover;
   color: rgba(255, 255, 255, 0);
@@ -190,5 +188,14 @@ footer > p {
 
   article > section {
     width: 100%;
+    height: calc(100vh/10);
+  }
+  
+  article > section:hover, article > section:focus{
+    height: calc(100vh/2.5);
+  }
+  figcaption {
+    font-size: 1em;
+    line-height: calc(100vh/15);
   }
 }
