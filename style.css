@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -46,15 +47,16 @@ header {
     padding: 1rem;
     background: var(--med-dark-blue);
     border-bottom: 10px solid var(--dark-blue);
+    margin-bottom: 50px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
-    color: #fff;
 }
 
 header > h2 {
   margin-top: 50px;
+  color: #fff;
 }
 
 #navTitle {
@@ -68,16 +70,11 @@ header > h2 {
   font-size: 2em;
 }
 
-article {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-section {
+#introContainer {
     padding: 2rem;
 }
 
-#introContainer {
+#introContent {
   display: flex;
   width: 50%;
   margin-left: auto;
@@ -92,12 +89,54 @@ section {
   flex-basis: 20%;
 }
 
-.sectionText {
+.introText {
   padding: 20px;
   font-size: 120%;
 }
 
+article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+article > section {
+  width: 30%;
+  background-color: slategray;
+  height: calc(100vh/2.5);
+  border: 2px solid #fff;
+  margin: 5px;
+}
+
+article > section:hover {
+  border-color: var(--dark-blue);
+  background: url("./images/canary.jpeg");
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 3em;
+  line-height: calc(100vh/3);
+}
+
+/*figure > img {
+  width: 100%;
+  max-width: 100%;
+}*/
+
+footer {
+  background-color: var(--dark-blue);
+  padding: 20px;
+}
+
 footer > p {
+  color: #fff;
     text-align: center;
 }
 
@@ -106,7 +145,7 @@ footer > p {
     font-size: 1em;
     margin-top: 20px;
   }
-  #introContainer {
+  #introContent {
     display: block;
     width: 100%;
   }
@@ -115,7 +154,7 @@ footer > p {
     max-width: 100%;
   }
 
-  .sectionText {
+  .introText {
     word-wrap: break-word;
     font-size: 0.8em;
   }
@@ -143,5 +182,13 @@ footer > p {
   li a:active {
     background-color: #fff;
     color: var(--dark-blue);
+  }
+
+  article {
+    width: 100%;
+  }
+
+  article > section {
+    width: 100%;
   }
 }
