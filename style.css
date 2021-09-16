@@ -87,7 +87,7 @@ section {
   background-color: slategray;
 }
 
-#racetrackPicture {
+#introPicture {
   max-width: 30%;
   flex-basis: 20%;
 }
@@ -99,4 +99,49 @@ section {
 
 footer > p {
     text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  header > h2{
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  #introContainer {
+    display: block;
+    width: 100%;
+  }
+
+  #introPicture {
+    max-width: 100%;
+  }
+
+  .sectionText {
+    word-wrap: break-word;
+    font-size: 0.8em;
+  }
+
+  #navTitle {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    font-size: 1.5em;
+  }
+  
+  ul > li{
+    text-align: center;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  li a {
+    border-bottom: 0px;
+    font-size: 0.8em;
+  }
+
+  li a:active {
+    background-color: #fff;
+    color: var(--dark-blue);
+  }
 }
