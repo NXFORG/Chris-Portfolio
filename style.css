@@ -191,7 +191,7 @@ footer > p {
     height: calc(100vh/10);
   }
   
-  article > section:hover {
+  article > section:hover, article > section:focus{
     height: calc(100vh/2.5);
   }
   figcaption {
