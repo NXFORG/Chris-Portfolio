@@ -41,6 +41,7 @@ li a {
 
 li a:hover {
   border-bottom-color: #fff;
+  transition: border-bottom-color 1s ease-in;
 }
 
 header {
@@ -76,7 +77,7 @@ header > h2 {
 
 #introContent {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -112,7 +113,7 @@ article > section {
 }
 
 article > section:hover {
-  background: url("./images/canary.jpeg");
+  background-image: url("./images/canary.jpeg");
   background-size: cover;
   color: rgba(255, 255, 255, 0);
 }
@@ -139,6 +140,10 @@ footer > p {
 }
 
 @media only screen and (max-width: 450px) {
+  header {
+    margin-bottom: 20px;
+  }
+
   header > h2{
     font-size: 1em;
     margin-top: 20px;
@@ -172,18 +177,27 @@ footer > p {
     padding-top: 20px;
   }
 
+  ul > li:active {
+    background-color: #fff;
+    color: var(--dark-blue);
+  }
+
   li a {
     border-bottom: 0px;
     font-size: 0.8em;
   }
 
   li a:active {
-    background-color: #fff;
     color: var(--dark-blue);
+  }
+
+  h1 {
+    font-size: 1.2em;
   }
 
   article {
     width: 100%;
+    margin-bottom: 0;
   }
 
   article > section {
