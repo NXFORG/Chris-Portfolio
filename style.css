@@ -39,7 +39,7 @@ li a {
   border-bottom: 2px solid var(--dark-blue);
 }
 
-li a:hover {
+li a:hover, li a:active {
   border-bottom-color: #fff;
   transition: border-bottom-color 1s ease-in;
 }
