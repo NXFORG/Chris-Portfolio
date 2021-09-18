@@ -177,11 +177,6 @@ footer > p {
     padding-top: 20px;
   }
 
-  ul > li:active {
-    background-color: #fff;
-    color: var(--dark-blue);
-  }
-
   li a {
     border-bottom: 0px;
     font-size: 0.8em;
@@ -189,6 +184,8 @@ footer > p {
 
   li a:active {
     color: var(--dark-blue);
+    background-color: #fff;
+    padding: 20px;
   }
 
   h1 {
