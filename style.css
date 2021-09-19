@@ -1,6 +1,7 @@
 :root {
   --dark-blue: #060f26;
   --med-dark-blue: #192238;
+  --med-blue: #203057;
   --dark-grey: #302e2e;
 }
 
@@ -42,13 +43,13 @@ li a {
 
 li a:hover, li a:active {
   border-bottom-color: #fff;
-  transition: border-bottom-color 0.5s ease-in;
+  transition: border-bottom-color 0.2s ease-in;
 }
 
 header {
     padding: 1rem;
     background: var(--med-dark-blue);
-    border-bottom: 10px solid var(--dark-blue);
+    border-bottom: 20px solid var(--med-blue);
     margin-bottom: 50px;
     height: 100vh;
 }
@@ -104,8 +105,9 @@ article {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
-  height: 100vh;
+  margin-bottom: 100px;
+  height: 120vh;
+  padding-bottom: calc(100vh/5);
 }
 
 article > section {
@@ -124,13 +126,10 @@ article > section {
 }
 
 section:hover > figure .languageLogo, section:hover > figure > figcaption {
-  /*background-image: url("./images/canary.jpeg");
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);*/
   display: none;
 }
 
-section:hover > figure > .languageDesc{
+section:hover > figure > .languageDesc {
   visibility: visible;
 }
 
@@ -152,6 +151,8 @@ figcaption {
 footer {
   background-color: var(--dark-blue);
   padding: 20px;
+  border-bottom: 20px solid var(--med-blue);
+  margin-top: 100px;
 }
 
 footer > p {
@@ -224,8 +225,8 @@ footer > p {
     width: 100%;
   }
   
-  article > section:hover, article > section:focus{
-    height: calc(100vh/2.5);
+  article > section, article > section{
+    height: calc(100vh/2);
   }
 
   figcaption {
@@ -235,6 +236,12 @@ footer > p {
   .languageDesc {
     font-size: 1em;
   }
+
+  #redirectHeader {
+    margin-top: calc(100vh/2.5 * 6.1);
+    font-size: 1em;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
