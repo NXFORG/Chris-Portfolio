@@ -108,27 +108,48 @@ article {
 
 article > section {
   width: 30%;
-  background-color: slategray;
   height: calc(100vh/2.5);
   margin: 5px;
+  box-shadow: 2px 2px 5px grey;
 }
 
-article > section:hover {
-  background-image: url("./images/canary.jpeg");
+.languageDesc {
+  visibility: hidden;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+section:hover > figure .languageLogo, section:hover > figure > figcaption {
+  /*background-image: url("./images/canary.jpeg");
   background-size: cover;
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);*/
+  display: none;
+}
+
+/*article > section:hover .languageLogo {
+  display: none;
+}*/
+
+section:hover > figure > .languageDesc{
+  visibility: visible;
+}
+
+figure {
+  flex-basis: 100%;
+}
+
+.languageLogo {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
+  font-size: 2em;
   text-align: center;
-  font-size: 3em;
-  line-height: calc(100vh/3);
 }
-
-/*figure > img {
-  width: 100%;
-  max-width: 100%;
-}*/
 
 footer {
   background-color: var(--dark-blue);
@@ -203,7 +224,6 @@ footer > p {
 
   article > section {
     width: 100%;
-    height: calc(100vh/10);
   }
   
   article > section:hover, article > section:focus{
@@ -211,6 +231,5 @@ footer > p {
   }
   figcaption {
     font-size: 1em;
-    line-height: calc(100vh/15);
   }
 }
