@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script defer src="github.js"></script>
 </head>
 <body>
     <nav>
@@ -32,62 +33,77 @@
             </div>
         </div>
     </header>
-    <h1>My Technology Stack:</h1>
-    <h4>Hover over each item to learn more about my experiences.</h4>
     <article>
+        <section id="githubContent">
+            <h1>Github Statistics</h1>
+            <div id="githubStatsContainer">
+                <p>Username: <img id="githubAvatar"><span id="githubUsername"></span></p>
+                <p>Public Repositories: <span id="githubRepositories"></span></p>
+                <p>Member Since: <span id="githubMemberYear"></span></p>
+            </div>
+        </section>
+    </article>
+    <hr>
+    <h1>My Technology Stack:</h1>
+    <h4>Hover over each item to learn more.</h4>
+    <article id="stackContainer">
         <section>
             <figure>
                 <img class="languageLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML5 Logo">
                 <figcaption onclick="">HTML</figcaption>
-                <p class="languageDesc">I first learned HTML while studying IT at sixth-form college. Since then, I've enjoyed discovering and learning about new tags to help build functional and modern websites.</p>
+                <p class="languageDesc">HyperText Markup Language</p>
             </figure>
         </section>
         <section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo">
                 <figcaption onclick="">CSS</figcaption>
-                <p class="languageDesc">Building on my understanding of HTML, learning CSS provided a way to make my web development projects look more attractive and engaging to my target audiences.</p>
+                <p class="languageDesc">Cascading Style Sheets</p>
             </figure>
         </section>
         <section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo">
                 <figcaption onclick="">JavaScript</figcaption>
-                <p class="languageDesc">As a new JavaScript developer, I am currently spending much of time completing JavaScript coding challenges. To support my learning journey, I also actively look at how JavaScript can improve interactivity in my websites.</p>
+                <p class="languageDesc">JavaScript</p>
             </figure>
         </section>
         <section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo">
                 <figcaption onclick="">MySQL</figcaption>
-                <p class="languageDesc">The majority of my experience with MySQL comes from university projects. My dissertation and associated project required implementing several forms on a web portal. This involved submitting 'GET' and 'POST' requests containing MySQL queries to manage data flow to and from a database.</p>
+                <p class="languageDesc">MySQL</p>
             </figure>
         </section>
         <section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/postgresql-3521647-2945091.png" alt="PostgreSQL Logo">
                 <figcaption onclick="">PostgreSQL</figcaption>
-                <p class="languageDesc">In my final year at university, I was required to construct a mock data warehouse to assist the NHS (National Health Service) with managing and caring for COVID-19 hospital patients. Using provided PostgreSQL queries, NHS staff could track which areas had the most patients and where supplies of medication were lowest.</p>
+                <p class="languageDesc">PostgreSQL</p>
             </figure>
         </section>
-        <section>
+        <!--<section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1868965-1583129.png" alt="Azure Logo">
                 <figcaption onclick="">Azure</figcaption>
                 <p class="languageDesc">I have long had a keen interest in cloud computing, having had previous experience with AWS (Amazon Web Services). A cloud training company provided me with an opportunity to take an Azure certification exam. During my studies, I enjoyed learning about how companies transition from on-premises infrastructure to the Azure platform and how a variety of Azure services are used.</p>
             </figure>
-        </section>
+        </section>-->
         <section>
             <figure>
                 <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue.js Logo">
                 <figcaption onclick="">Vue.js</figcaption>
-                <p class="languageDesc">Learning Vue has been a thoroughly enjoyable experience. I especially like Vue's component-first approach to web development where each component can be re-used as many times as needed. My goal is to re-create as many of my past projects with Vue.js as possible.</p>
+                <p class="languageDesc">Vue.js</p>
             </figure>
         </section>
     </article>
-    <h2 id="redirectHeader">Visit <a href="index.html">about</a> for more information, or contact me <a href="index.html">here</a>.</h2>
     <footer>
         <p>2021 Chris Anstead</p>
+        <ul>
+            <li class="footerLink"><a href="">About</a></li>
+            <li class="footerLink"><a href="">Projects</a></li>
+            <li class="footerLink"><a href="">Contact</a></li>
+        </ul>
     </footer>
 </body>
 </html>

@@ -33,7 +33,7 @@ nav > ul {
   padding-top: 20px;
 }
 
-li a {
+.navLink a{
   display: block;
   padding: 10px;
   color: white;
@@ -41,7 +41,7 @@ li a {
   border-bottom: 2px solid var(--dark-blue);
 }
 
-li a:hover, li a:active {
+.navLink a:hover, .navLink a:active {
   border-bottom-color: #fff;
   transition: border-bottom-color 0.2s ease-in;
 }
@@ -50,7 +50,6 @@ header {
     padding: 1rem;
     background: var(--med-dark-blue);
     border-bottom: 20px solid var(--med-blue);
-    margin-bottom: 50px;
     height: 100vh;
 }
 
@@ -98,7 +97,37 @@ header > h2 {
   font-size: 120%;
 }
 
-article {
+#githubContent{
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+#githubContent > h1{
+  margin-top: 0;
+  font-size: 2em;
+}
+
+#githubStatsContainer {
+  text-align: center;
+}
+
+#githubStatsContainer > p{
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+#githubStatsContainer > p > span {
+  color: green;
+}
+
+#githubAvatar{
+  max-width: 20px;
+  border-radius: 10px;
+}
+
+#stackContainer {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -107,10 +136,10 @@ article {
   margin-right: auto;
   margin-bottom: 100px;
   height: 120vh;
-  padding-bottom: calc(100vh/5);
+  padding-bottom: calc(100vh/2.5);
 }
 
-article > section {
+#stackContainer > section {
   width: 30%;
   height: calc(100vh/2.5);
   margin: 5px;
@@ -160,10 +189,12 @@ footer > p {
     text-align: center;
 }
 
+.footerLink a{
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.5em;
+}
 @media only screen and (max-width: 450px) {
-  header {
-    margin-bottom: 20px;
-  }
 
   header > h2{
     font-size: 1em;
@@ -216,16 +247,30 @@ footer > p {
     font-size: 1.2em;
   }
 
-  article {
+  #githubContent{
+    margin-bottom: 20px;
+  }
+
+  #githubContent > h1{
+    font-size: 1.2em;
+  }
+  
+  #githubStatsContainer > p{
+    font-size: 1em;
+    display: block;
+  }
+
+  #githubAvatar{
+    max-width: 15px;
+  }
+
+  #stackContainer {
     width: 100%;
     margin-bottom: 0;
   }
 
-  article > section {
+  #stackContainer > section {
     width: 100%;
-  }
-  
-  article > section, article > section{
     height: calc(100vh/2);
   }
 
@@ -234,11 +279,6 @@ footer > p {
   }
 
   .languageDesc {
-    font-size: 1em;
-  }
-
-  #redirectHeader {
-    margin-top: calc(100vh/2.5 * 6.1);
     font-size: 1em;
   }
 
