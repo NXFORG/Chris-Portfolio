@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon.ico">
     <script defer src="static/js/github.js"></script>
     <script defer src="static/js/stack.js"></script>
 </head>
@@ -16,7 +17,7 @@
     <nav>
       <ul>
         <li class="navLink"><a href="index.html">HOME</a></li>
-        <li class="navLink"><a href="index.html">ABOUT</a></li>
+        <li class="navLink"><a href="#stackArticle">STACK</a></li>
         <li class="navLink"><a href="index.html">PROJECTS</a></li>
         <li class="navLink"><a href="index.html">CONTACT</a></li>
       </ul>
@@ -35,11 +36,12 @@
             </div>
         </div>
     </header>
+    <a id="stackArticle"></a>
     <article>
-        <section id="githubContent">
-            <h1 id="githubTitle">Github Statistics</h1>
+        <section class="headerContent">
+            <h1 id="githubTitle">GitHub Statistics</h1>
             <div id="githubStatsContainer">
-                <p>Username: <img id="githubAvatar"><span id="githubUsername"></span></p>
+                <p>Username: <span id="githubUsername"></span></p>
                 <p>Public Repositories: <span id="githubRepositories"></span></p>
                 <p>Member Since: <span id="githubMemberYear"></span></p>
             </div>
@@ -63,6 +65,9 @@
         <section data-value="Vue.js">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue.js Logo" data-value="Vue.js">
         </section>
+        <section data-value="Docker">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/docker-3521391-2944835.png" alt="Docker Logo" data-value="Docker">
+        </section>
         <section data-value="MySQL">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo" data-value="MySQL">
         </section>
@@ -70,9 +75,17 @@
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/postgresql-3521647-2945091.png" alt="PostgreSQL Logo" data-value="PostgreSQL">
         </section>
         <section data-value="Microsoft Azure">
-            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1868965-1583129.png" alt="Azure Logo" data-value="Microsoft Azure">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1-190761.png" alt="Azure Logo" data-value="Microsoft Azure">
+        </section>
+        <section data-value="GitHub">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub Logo" data-value="GitHub">
         </section>
     </article>
+    <!-- <article>
+        <section class="headerContent">
+            <h1 id="projectsTitle">Projects</h1>
+        </section>
+    </article> -->
     <footer>
         <p>2021 Chris Anstead</p>
     </footer>

@@ -57,7 +57,6 @@ header {
     padding: 1rem;
     background-image: url('../images/sky2.jpg');
     background-size: cover;
-    border-bottom: 20px solid var(--med-blue);
     height: 100vh;
 }
 
@@ -101,10 +100,18 @@ header > h2 {
     color: #fff;
 }
 
-#githubContent{
+#stackArticle {
+  display: block; 
+  position: relative; 
+  top: -40px; 
+  visibility: hidden;
+}
+
+.headerContent{
     background-color: var(--dark-blue);
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top: 20px solid var(--med-blue);
     border-bottom: 20px solid var(--med-blue);
 }
 
@@ -130,20 +137,16 @@ header > h2 {
     color: green;
 }
 
-#githubAvatar{
-    max-width: 20px;
-    border-radius: 10px;
-}
-
 #stackTitle {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #stackContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 120px;
 }
 
 #stackContainer > section {
@@ -156,6 +159,8 @@ header > h2 {
 
 .languageLogo {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 } 
 
 .languageDesc {
@@ -170,27 +175,9 @@ header > h2 {
     background-color: var(--light-blue-grey);
 }
 
-/* section:hover > figure .languageLogo, section:hover > figure > figcaption {
-  display: none;
-}
-
-section:hover > figure > .languageDesc {
-  display: block;
-} */
-
-figure {
-    flex-basis: 100%;
-}
-
-.languageLogo {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figcaption {
-    font-size: 2em;
-    text-align: center;
+#projectsTitle{
+  font-size: 2em;
+  color: #fff;
 }
 
 footer {
