@@ -4,7 +4,6 @@ const getGithubUserData = async (username) => {
         let data = await resp.json();
         console.log(data)
         if(data){
-            document.getElementById('githubAvatar').src = data.avatar_url;
             document.getElementById('githubUsername').textContent = data.login;
             document.getElementById('githubRepositories').textContent = data.public_repos;
             document.getElementById('githubMemberYear').textContent = data.created_at.substring(0,4);
