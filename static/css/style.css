@@ -1,0 +1,306 @@
+:root {
+  --dark-blue: #060f26;
+  --med-dark-blue: #192238;
+  --med-blue: #203057;
+  --dark-grey: #302e2e;
+  --light-blue-grey: rgba(180,180,200,0.5);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(180,180,200,0.5);
+}
+
+nav {
+    background-color: var(--dark-blue);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.navLink{
+    float: left;
+    background-color: var(--dark-blue);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navLink a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+.navLink a:hover, .navLink a:active {
+    border-bottom-color: #fff;
+    transition: border-bottom-color 0.5s ease-in;
+}
+
+header {
+    padding: 1rem;
+    background-image: url('../images/sky2.jpg');
+    background-size: cover;
+    border-bottom: 20px solid var(--med-blue);
+    height: 100vh;
+}
+
+#myName {
+    color: #fff;
+    font-size: 6em;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+header > h2 {
+    margin-top: 50px;
+    color: #fff;
+}
+
+#introContainer {
+    padding: 2rem;
+}
+
+#introContent {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-blue-grey);
+}
+
+#introPicture {
+    max-width: 30%;
+    flex-basis: 20%;
+}
+
+.introText {
+    padding: 20px;
+    font-size: 120%;
+    color: #fff;
+}
+
+#githubContent{
+    background-color: var(--dark-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 20px solid var(--med-blue);
+}
+
+#githubTitle{
+    margin-top: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+#githubStatsContainer {
+    text-align: center;
+}
+
+#githubStatsContainer > p{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#githubStatsContainer > p > span {
+    color: green;
+}
+
+#githubAvatar{
+    max-width: 20px;
+    border-radius: 10px;
+}
+
+#stackTitle {
+    margin-top: 50px;
+}
+
+#stackContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#stackContainer > section {
+    background-color: #fff;
+    margin: 5px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    padding: 30px;
+} 
+
+.languageLogo {
+    max-width: 100%;
+} 
+
+.languageDesc {
+    display: none;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#stackContainer > section:hover {
+    background-color: var(--light-blue-grey);
+}
+
+/* section:hover > figure .languageLogo, section:hover > figure > figcaption {
+  display: none;
+}
+
+section:hover > figure > .languageDesc {
+  display: block;
+} */
+
+figure {
+    flex-basis: 100%;
+}
+
+.languageLogo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-bottom: 20px solid var(--med-blue);
+    margin-top: 100px;
+}
+
+footer > p {
+    color: #fff;
+    text-align: center;
+}
+
+.footerLink a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5em;
+}
+@media only screen and (max-width: 450px) {
+
+  header > h2{
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  #introContent {
+    display: block;
+    width: 100%;
+  }
+
+  #introPicture {
+    max-width: 100%;
+  }
+
+  .introText {
+    word-wrap: break-word;
+    font-size: 0.8em;
+  }
+
+  #navTitle {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    font-size: 1.5em;
+  }
+  
+  .navLink{
+    text-align: center;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .navLink:hover, .navLink:active {
+    background-color: #fff;
+    color: var(--dark-blue);
+  }
+
+  li a {
+    border-bottom: 0px;
+    font-size: 0.8em;
+  }
+
+  .navLink > a:hover, .navLink > a:active {
+    color: var(--dark-blue);
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  #githubContent{
+    margin-bottom: 20px;
+  }
+
+  #githubContent > h1{
+    font-size: 1.2em;
+  }
+  
+  #githubStatsContainer > p{
+    font-size: 1em;
+    display: block;
+  }
+
+  #githubAvatar{
+    max-width: 15px;
+  }
+
+  #stackContainer {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #stackContainer > section {
+    width: 100%;
+    height: calc(100vh/2);
+  }
+
+  figcaption {
+    font-size: 1em;
+  }
+
+  .languageDesc {
+    font-size: 1em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}

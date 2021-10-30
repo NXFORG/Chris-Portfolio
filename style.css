@@ -1,6 +1,7 @@
 :root {
   --dark-blue: #060f26;
   --med-dark-blue: #192238;
+  --med-blue: #203057;
   --dark-grey: #302e2e;
 }
 
@@ -24,14 +25,15 @@ nav > ul {
   list-style-type: none;
 }
 
-ul > li{
+.navLink{
   float:left;
+  background-color: var(--dark-blue);
   padding-right: 30px;
   padding-bottom: 10px;
   padding-top: 20px;
 }
 
-li a {
+.navLink a{
   display: block;
   padding: 10px;
   color: white;
@@ -39,15 +41,16 @@ li a {
   border-bottom: 2px solid var(--dark-blue);
 }
 
-li a:hover {
+.navLink a:hover, .navLink a:active {
   border-bottom-color: #fff;
+  transition: border-bottom-color 0.2s ease-in;
 }
 
 header {
     padding: 1rem;
     background: var(--med-dark-blue);
-    border-bottom: 10px solid var(--dark-blue);
-    margin-bottom: 50px;
+    border-bottom: 20px solid var(--med-blue);
+    height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -55,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 header > h2 {
-  margin-top: 50px;
+  margin-top: calc(100vh/6);
   color: #fff;
 }
 
@@ -76,7 +79,7 @@ header > h2 {
 
 #introContent {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -94,43 +97,91 @@ header > h2 {
   font-size: 120%;
 }
 
-article {
+#githubContent{
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+#githubContent > h1{
+  margin-top: 0;
+  font-size: 2em;
+}
+
+#githubStatsContainer {
+  text-align: center;
+}
+
+#githubStatsContainer > p{
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+#githubStatsContainer > p > span {
+  color: green;
+}
+
+#githubAvatar{
+  max-width: 20px;
+  border-radius: 10px;
+}
+
+#stackContainer {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  height: 120vh;
+  padding-bottom: calc(100vh/2.5);
 }
 
-article > section {
+#stackContainer > section {
   width: 30%;
-  background-color: slategray;
   height: calc(100vh/2.5);
   margin: 5px;
+  box-shadow: 2px 2px 5px grey;
 }
 
-article > section:hover {
-  background: url("./images/canary.jpeg");
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
+.languageDesc {
+  visibility: hidden;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+section:hover > figure .languageLogo, section:hover > figure > figcaption {
+  display: none;
+}
+
+section:hover > figure > .languageDesc {
+  visibility: visible;
+}
+
+figure {
+  flex-basis: 100%;
+}
+
+.languageLogo {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
+  font-size: 2em;
   text-align: center;
-  font-size: 3em;
-  line-height: calc(100vh/3);
 }
-
-/*figure > img {
-  width: 100%;
-  max-width: 100%;
-}*/
 
 footer {
   background-color: var(--dark-blue);
   padding: 20px;
+  border-bottom: 20px solid var(--med-blue);
+  margin-top: 100px;
 }
 
 footer > p {
@@ -138,7 +189,13 @@ footer > p {
     text-align: center;
 }
 
+.footerLink a{
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.5em;
+}
 @media only screen and (max-width: 450px) {
+
   header > h2{
     font-size: 1em;
     margin-top: 20px;
@@ -164,7 +221,7 @@ footer > p {
     font-size: 1.5em;
   }
   
-  ul > li{
+  .navLink{
     text-align: center;
     width: 100%;
     padding-right: 0px;
@@ -172,30 +229,62 @@ footer > p {
     padding-top: 20px;
   }
 
+  .navLink:hover, .navLink:active {
+    background-color: #fff;
+    color: var(--dark-blue);
+  }
+
   li a {
     border-bottom: 0px;
     font-size: 0.8em;
   }
 
-  li a:active {
-    background-color: #fff;
+  .navLink > a:hover, .navLink > a:active {
     color: var(--dark-blue);
   }
 
-  article {
-    width: 100%;
+  h1 {
+    font-size: 1.2em;
   }
 
-  article > section {
-    width: 100%;
-    height: calc(100vh/10);
+  #githubContent{
+    margin-bottom: 20px;
+  }
+
+  #githubContent > h1{
+    font-size: 1.2em;
   }
   
-  article > section:hover, article > section:focus{
-    height: calc(100vh/2.5);
+  #githubStatsContainer > p{
+    font-size: 1em;
+    display: block;
   }
+
+  #githubAvatar{
+    max-width: 15px;
+  }
+
+  #stackContainer {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #stackContainer > section {
+    width: 100%;
+    height: calc(100vh/2);
+  }
+
   figcaption {
     font-size: 1em;
-    line-height: calc(100vh/15);
+  }
+
+  .languageDesc {
+    font-size: 1em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

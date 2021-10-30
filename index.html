@@ -5,70 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Anstead</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="./static/css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <script defer src="static/js/github.js"></script>
+    <script defer src="static/js/stack.js"></script>
 </head>
 <body>
     <nav>
       <ul>
-        <span id="navTitle">Chris Anstead</span>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html">ABOUT</a></li>
-        <li><a href="index.html">CONTACT</a></li>
+        <li class="navLink"><a href="index.html">HOME</a></li>
+        <li class="navLink"><a href="index.html">ABOUT</a></li>
+        <li class="navLink"><a href="index.html">PROJECTS</a></li>
+        <li class="navLink"><a href="index.html">CONTACT</a></li>
       </ul>
     </nav>
     <header>
-      <h2>Hello and welcome to my Portfolio</h2>
+        <h1 id="myName">CHRIS ANSTEAD</h1>
+        <h2>Hello and welcome to my Portfolio</h2>
         <div id="introContainer">
             <div id="introContent">
-                <img id="introPicture" src="./images/me.png" alt="A racetrack">
+                <img id="introPicture" src="./static/images/me.png" alt="A picture of Chris Anstead">
                 <div class="introText">
-                  <p>Please see below for some information about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <p>This is a picture of me.</p>
+                  <p>A recent Computer Science graduate from the University of Portsmouth with a passion for all things space related.</p>
+                  <p>I'm currently enjoying learning full-stack web devlopment with a focus on JavaScript and Python.</p>
+                  <p>I have a keen interest in cloud computing and system architecture and hope to explore roles in this area in the future.</p>
                 <div>
             </div>
         </div>
     </header>
-    <h1>Hobbies and interests:</h1>
-    <!--<h4>Hover over each interest to learn more</h4>-->
     <article>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+        <section id="githubContent">
+            <h1 id="githubTitle">Github Statistics</h1>
+            <div id="githubStatsContainer">
+                <p>Username: <img id="githubAvatar"><span id="githubUsername"></span></p>
+                <p>Public Repositories: <span id="githubRepositories"></span></p>
+                <p>Member Since: <span id="githubMemberYear"></span></p>
+            </div>
         </section>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+    </article>
+    <h1 id="stackTitle">My Technology Stack</h1>
+    <h3 id="technologyName">Hover over an item below.</h3>
+    <article id="stackContainer">
+        <section data-value="HyperText Markup Language (HTML)">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/html5-19-722707.png" alt="HTML5 Logo" data-value="HyperText Markup Language (HTML)">
         </section>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+        <section data-value="Cascading Style Sheets (CSS)">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png" alt="CSS Logo" data-value="Cascading Style Sheets (CSS)">
         </section>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+        <section data-value="JavaScript">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo" data-value="JavaScript">
         </section>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+        <section data-value="Node.js">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png" alt="Node.js Logo" data-value="Node.js">
         </section>
-        <section>
-            <figure>
-                <!--<img src="./images/me.png" alt="me">-->
-                <figcaption onclick="">Lorem</figcaption>
-            </figure>
+        <section data-value="Vue.js">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue.js Logo" data-value="Vue.js">
+        </section>
+        <section data-value="MySQL">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo" data-value="MySQL">
+        </section>
+        <section data-value="PostgreSQL">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/postgresql-3521647-2945091.png" alt="PostgreSQL Logo" data-value="PostgreSQL">
+        </section>
+        <section data-value="Microsoft Azure">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1868965-1583129.png" alt="Azure Logo" data-value="Microsoft Azure">
         </section>
     </article>
     <footer>
