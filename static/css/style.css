@@ -313,6 +313,7 @@ footer > p {
     word-wrap: break-word;
     font-size: 0.8em;
     color: black;
+    margin-bottom: 100px;
   }
 
   nav > ul {
