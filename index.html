@@ -11,14 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon.ico">
     <script defer src="static/js/github.js"></script>
-    <script defer src="static/js/stack.js"></script>
+    <script defer src="static/js/handlers.js"></script>
 </head>
 <body>
     <nav>
+      <span id="hamburger" onclick="">☰</span>
       <ul>
         <li class="navLink"><a href="index.html">HOME</a></li>
         <li class="navLink"><a href="#stackArticle">STACK</a></li>
-        <li class="navLink"><a href="index.html">PROJECTS</a></li>
+        <li class="navLink"><a href="#projectsArticle">PROJECTS</a></li>
         <li class="navLink"><a href="index.html">CONTACT</a></li>
       </ul>
     </nav>
@@ -68,22 +69,23 @@
         <section data-value="React">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo" data-value="React">
         </section>
-        <section data-value="Docker">
-            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/docker-3521391-2944835.png" alt="Docker Logo" data-value="Docker">
-        </section>
         <section data-value="MySQL">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo" data-value="MySQL">
         </section>
         <section data-value="PostgreSQL">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/postgresql-3521647-2945091.png" alt="PostgreSQL Logo" data-value="PostgreSQL">
         </section>
-        <section data-value="Microsoft Azure">
-            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1-190761.png" alt="Azure Logo" data-value="Microsoft Azure">
+        <section data-value="Docker">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/docker-3521391-2944835.png" alt="Docker Logo" data-value="Docker">
         </section>
+        <!-- <section data-value="Microsoft Azure">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1-190761.png" alt="Azure Logo" data-value="Microsoft Azure">
+        </section> -->
         <section data-value="GitHub">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub Logo" data-value="GitHub">
         </section>
     </article>
+    <a id="projectsArticle"></a>
     <article>
         <section class="headerContent">
             <h1 id="projectsTitle">Projects</h1>

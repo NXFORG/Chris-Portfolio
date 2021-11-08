@@ -3,7 +3,7 @@
   --med-dark-blue: #192238;
   --med-blue: #203057;
   --dark-grey: #302e2e;
-  --light-blue-grey: rgba(180,180,200,0.5);
+  --light-blue-grey: rgba(180,180,200,0.1);
 }
 
 * {
@@ -52,6 +52,14 @@ nav > ul {
 .navLink a:hover, .navLink a:active {
     border-bottom-color: #fff;
     transition: border-bottom-color 0.5s ease-in;
+}
+
+#hamburger {
+  color: #fff;
+  font-size: 2em;
+  display: none;
+  text-align: left;
+  margin-left: 10px;
 }
 
 header {
@@ -144,7 +152,7 @@ header > h2 {
 
 #stackContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 120px;
@@ -215,7 +223,6 @@ footer {
     background-color: var(--dark-blue);
     padding: 20px;
     border-bottom: 20px solid var(--med-blue);
-    margin-top: 100px;
 }
 
 footer > p {
@@ -228,15 +235,41 @@ footer > p {
     color: #fff;
     line-height: 1.5em;
 }
-@media only screen and (max-width: 450px) {
 
-  header > h2{
-    font-size: 1em;
-    margin-top: 20px;
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  #introContent {
+    width: 60%;
+    background-color: rgba(180,180,200);
+    position: absolute;
+    top: 50vh;
+    left: 20%;
   }
+
+  #introPicture {
+    position: absolute;
+    max-width: 40%;
+    top: -25vh;
+    border-radius: 50%;
+  }
+
+  .introText {
+    word-wrap: break-word;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 800px)  {
+  #myName {
+    font-size: 4em;
+    margin-top: 200px;
+  } 
+
   #introContent {
     display: block;
+    display: grid;
+    grid-template-columns: 30% 70%;
     width: 100%;
+    background-color: rgba(180,180,200);
   }
 
   #introPicture {
@@ -246,22 +279,49 @@ footer > p {
   .introText {
     word-wrap: break-word;
     font-size: 0.8em;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  #myName {
+    font-size: 2em;
+    margin-top: 50px;
+  } 
+
+  header > h2 {
+    font-size: 1em;
+    margin-top: 20px;
   }
 
-  #navTitle {
-    text-align: center;
+  #introContent {
+    display: block;
     width: 100%;
-    padding-left: 0px;
-    font-size: 1.5em;
+    background-color: rgba(180,180,200);
+  }
+
+  #introPicture {
+    max-width: 100%;
+  }
+
+  .introText {
+    word-wrap: break-word;
+    font-size: 0.8em;
+    color: black;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  .navLink{
+    width: 100%;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
   }
   
-  .navLink{
-    text-align: center;
-    width: 100%;
-    padding-right: 0px;
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
 
   .navLink:hover, .navLink:active {
     background-color: #fff;
@@ -277,16 +337,16 @@ footer > p {
     color: var(--dark-blue);
   }
 
+  #hamburger {
+    display: block;
+  }
+
   h1 {
     font-size: 1.2em;
   }
 
   #githubContent{
     margin-bottom: 20px;
-  }
-
-  #githubContent > h1{
-    font-size: 1.2em;
   }
   
   #githubStatsContainer > p{
@@ -299,21 +359,29 @@ footer > p {
   }
 
   #stackContainer {
-    width: 100%;
-    margin-bottom: 0;
+    grid-template-columns: 1fr;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 50px;
   }
 
   #stackContainer > section {
     width: 100%;
-    height: calc(100vh/2);
+    height: calc(100vh/3.5);
   }
 
-  figcaption {
-    font-size: 1em;
+  #githubTitle, #projectsTitle {
+    font-size: 1.5em;
   }
 
-  .languageDesc {
-    font-size: 1em;
+  #projectList {
+    overflow: auto;
+    height: 100vh;
+    margin-bottom: 150px;
+  }
+
+  .projectItem {
+    grid-template-columns: 1fr;
   }
 
   footer {
@@ -322,3 +390,6 @@ footer > p {
     width: 100%;
   }
 }
+
+
+
