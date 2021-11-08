@@ -14,4 +14,4 @@ const getGithubUserData = async (username) => {
         console.error(`${err}`);
     }
 }
-getGithubUserData('nxforg');
+//getGithubUserData('nxforg');
