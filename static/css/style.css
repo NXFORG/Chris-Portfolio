@@ -180,6 +180,10 @@ header > h2 {
     margin-top: 20px;
 }
 
+#technologyName {
+  font-size: 1.2em;
+}
+
 #stackContainer > section:hover {
     background-color: var(--light-blue-grey);
 }
