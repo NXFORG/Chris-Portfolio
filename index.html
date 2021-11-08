@@ -8,7 +8,7 @@
     <link href="./static/css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon.ico">
     <script defer src="static/js/github.js"></script>
     <script defer src="static/js/stack.js"></script>
@@ -65,6 +65,9 @@
         <section data-value="Vue.js">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue.js Logo" data-value="Vue.js">
         </section>
+        <section data-value="React">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo" data-value="React">
+        </section>
         <section data-value="Docker">
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/docker-3521391-2944835.png" alt="Docker Logo" data-value="Docker">
         </section>
@@ -81,11 +84,72 @@
             <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub Logo" data-value="GitHub">
         </section>
     </article>
-    <!-- <article>
+    <article>
         <section class="headerContent">
             <h1 id="projectsTitle">Projects</h1>
         </section>
-    </article> -->
+    </article>
+    <article id="projectList">
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/stylus.png" alt="stylus browse page">
+            <section class="projectContent">
+                <h3 class="projectTitle">Stylus Record Manager</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Docker, Express, PostgreSQL, Discogs API</h4>
+                <p class="projectDescription">Vinyl collectors such as myself are always on the lookout for simple collection management solutions to help us 
+                    find out more about the music we've purchased. We often like to know what country a release comes from, how rare it is and how much it is worth.
+                    Stylus utilises the Discogs API to enable a user to search for and catalogue the items they own. The user's total collection value is then calculated.
+                    Some users may also wish to use Stylus to export their collection to a PDF or CSV.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/music_manager">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" id="habipadImg" src="./static/images/habipad.png" alt="habipad habits display page">
+            <section class="projectContent">
+                <h3 class="projectTitle">HabiPad Habit Tracker</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Docker, Express, Heroku, PostgreSQL</h4>
+                <p class="projectDescription">In recent years, there has been a renewed focus from the public on living a healthy lifestyle. 
+                    This often entails forming new habits such as sleeping 8 hours or drinking 2 litres of water each day. HabiPad was a
+                    group project aimed at providing a user with a platform to define and monitor a habit of their choosing. To track a habit, 
+                    the user must first create an account or login, enter their habit name and select a frequency (daily, weekly, monthly).
+                    Following successful habit creation, the user can then make frequent log entries towards their defined habit, dependent 
+                    on their chosen frequency. A streak is displayed next to the habit, encouraging the user to keep making log entries.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/Forum-123/Lap-2-Project-Server">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/streethub.png" alt="streethub home page">
+            <section class="projectContent">
+                <h3 class="projectTitle">StreetHub Community Journaling</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Express, Giphy API</h4>
+                <p class="projectDescription">Many communities use online community journalling platforms to promote events happening in their area. These platforms 
+                    may also be used to raise awareness of crimes or to advertise businesses. StreetHub was a group project and provides an anonymous posting solution 
+                    for members to share articles containing content of their choosing. Other users can then leave a comment on these posts, along with an optional GIF or emoji reaction.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/community_journaling">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/petplus.png" alt="petplus add diagnosis page">
+            <section class="projectContent">
+                <h3 class="projectTitle">PetPlus Pet Care</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, PHP, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> MAMP, AWS, Alexa Developer Console</h4>
+                <p class="projectDescription">When going on holiday, pet owners are often faced with the difficult task of finding someone to care for their pet if the
+                    country they are travelling to does not allow animals from overseas to enter. The individual tasked with caring for the owner's pet may need to seek 
+                    veterinary advice which would usually require calling or emailing a vet and waiting for a response. PetPlus is a platform for vets to upload pet information
+                    which can be accessed by the carer through an Alexa skill. This information includes follow-up actions from previous treatments, diet plans and exercise routines.
+                    If a pet has been prescribed medication, dosage information can also be retrieved. PetPlus was developed for my university dissertation in conjunction with animal health 
+                    industry professionals.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/Final-Year-Project-Petplus">Take me to GitHub</a></h4>
+            </section>
+        </section>
+    </article>
     <footer>
         <p>2021 Chris Anstead</p>
     </footer>

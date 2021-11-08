@@ -8,6 +8,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
 }
 
@@ -143,9 +144,9 @@ header > h2 {
 
 #stackContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-left: 15%;
-    margin-right: 15%;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 120px;
 }
 
@@ -178,6 +179,36 @@ header > h2 {
 #projectsTitle{
   font-size: 2em;
   color: #fff;
+}
+
+.projectItem {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 20px;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.projectImage {
+  max-width: 100%;
+}
+
+#habipadImg{
+    margin-top: 20px;
+}
+
+.projectTitle, .projectLanguages, .projectTools, .projectLink {
+  text-align: left;
+}
+
+.projectLanguages > span, .projectTools > span, .projectLink {
+  color: var(--med-blue);
+  font-weight: 500;
+}
+
+.projectDescription {
+  padding-right: 10px;
 }
 
 footer {
