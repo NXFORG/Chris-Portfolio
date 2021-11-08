@@ -294,6 +294,10 @@ footer > p {
     margin-top: 50px;
   } 
 
+  header {
+    height: 120vh;
+  }
+  
   header > h2 {
     font-size: 1em;
     margin-top: 20px;
@@ -303,7 +307,6 @@ footer > p {
     display: block;
     width: 100%;
     background-color: rgba(180,180,200);
-    margin-bottom: 100px;
   }
 
   #introPicture {
