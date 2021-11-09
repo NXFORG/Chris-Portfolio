@@ -2,7 +2,6 @@ const getGithubUserData = async (username) => {
     try {
         let resp = await fetch(`https://api.github.com/users/${username}`);
         let data = await resp.json();
-        console.log(data)
         if(data){
             document.getElementById('githubUsername').textContent = data.login;
             document.getElementById('githubRepositories').textContent = data.public_repos;
