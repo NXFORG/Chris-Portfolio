@@ -1,12 +1,11 @@
+//Technology Stack
 const stackList = document.getElementById('stackContainer');
 const stackItems = stackList.childNodes;
-let techTitle = document.getElementById('technologyName');
 
+//Dropdown navbar
 const hamburgerLink = document.getElementById('hamburger');
-const navBar = document.querySelector('ul');
 
-const changeText = (e) => techTitle.textContent = e.target.getAttribute('data-value');
-
+//Change sub-header text on hover
 stackItems.forEach(item => {
     item.addEventListener('pointerover', e => {
         changeText(e);
@@ -16,17 +15,11 @@ stackItems.forEach(item => {
     });
 });
 
+//Reset sub-header text
 stackList.addEventListener('pointerleave', e => {
     techTitle.textContent = 'Hover over an item below.';
 });
 
-const clickHamburger = () => {
-    if(navBar.style.display === 'block') {
-        navBar.style.display = 'none';
-    } else {
-        navBar.style.display = 'block';
-    }
-}
-
+//Click hamburger icon to display dropdown navbar
 hamburgerLink.addEventListener('click', e => clickHamburger());
-    
+

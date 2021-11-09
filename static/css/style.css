@@ -79,7 +79,7 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-header > h2 {
+#welcomeText {
     margin-top: 50px;
     color: #fff;
 }
@@ -294,7 +294,11 @@ footer > p {
     margin-top: 50px;
   } 
 
-  header > h2 {
+  header {
+    height: 120vh;
+  }
+  
+  #welcomeText {
     font-size: 1em;
     margin-top: 20px;
   }
