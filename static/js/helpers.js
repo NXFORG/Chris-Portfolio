@@ -39,7 +39,6 @@ const getIndex = (num) => {
 //Gets a number between 0 and 1000 and then either changes the welcome text to the next array item, or displays a random fact
 const setWelcome = () => {
     let index = getIndex(100);
-    console.log(index)
     if(index >= 10) {
         welcomeText.textContent = welcomeStrings[showIndex]
     } else {
