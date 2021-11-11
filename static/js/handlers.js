@@ -1,11 +1,13 @@
+//GitHub Stats elements
+const username = document.getElementById('githubUsername');
+const repos = document.getElementById('githubRepositories');
+const yearJoined = document.getElementById('githubMemberYear');
+
 //Technology Stack
 const stackList = document.getElementById('stackContainer');
 const stackItems = stackList.childNodes;
 
-//Dropdown navbar
-const hamburgerLink = document.getElementById('hamburger');
-
-//Change sub-header text on hover
+//Change tech stack sub-header text on hover
 stackItems.forEach(item => {
     item.addEventListener('pointerover', e => {
         changeText(e);
@@ -15,11 +17,14 @@ stackItems.forEach(item => {
     });
 });
 
-//Reset sub-header text
+//Reset stack sub-header text
 stackList.addEventListener('pointerleave', e => {
     techTitle.textContent = 'Hover over an item below.';
 });
 
-//Click hamburger icon to display dropdown navbar
+//Dropdown navbar
+const hamburgerLink = document.getElementById('hamburger');
+
+//Click hamburger icon on smaller screens to display dropdown navbar
 hamburgerLink.addEventListener('click', e => clickHamburger());
 
