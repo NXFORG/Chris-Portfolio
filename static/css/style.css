@@ -130,8 +130,14 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-#githubStatsContainer {
+#githubStatsContainer, #languageCount {
     text-align: center;
+}
+
+#languageCount {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1.2em;
 }
 
 #githubStatsContainer > p{
@@ -362,8 +368,8 @@ footer > p {
     display: block;
   }
 
-  #githubAvatar{
-    max-width: 15px;
+  #languageCount {
+    font-size: 0.8em;
   }
 
   #stackContainer {
