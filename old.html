@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: Chris Anstead Chris Anstead's portfolio website.">
+    <title>Chris Anstead</title>
+    <link href="./static/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon.ico">
+    <script defer src="static/js/github.js"></script>
+    <script defer src="static/js/helpers.js"></script>
+    <script defer src="static/js/handlers.js"></script>
+</head>
+<body>
+    <nav>
+      <span id="hamburger" onclick="">☰</span>
+      <ul>
+        <li class="navLink"><a href="index.html">HOME</a></li>
+        <li class="navLink"><a href="#stackArticle">STACK</a></li>
+        <li class="navLink"><a href="#projectsArticle">PROJECTS</a></li>
+        <!-- <li class="navLink"><a href="index.html">CONTACT</a></li> -->
+      </ul>
+    </nav>
+    <header>
+        <h1 id="myName">CHRIS ANSTEAD</h1>
+        <h2 id="welcomeText">Hello and welcome to my Portfolio</h2>
+        <div id="introContainer">
+            <div id="introContent">
+                <img id="introPicture" src="./static/images/me.png" alt="A picture of Chris Anstead">
+                <div class="introText">
+                  <p>A recent Computer Science graduate from the University of Portsmouth with a passion for record collecting and all things space related.</p>
+                  <p>I'm currently enjoying learning full-stack web devlopment with a focus on JavaScript and Python.</p>
+                  <p>I have a keen interest in cloud computing and system architecture and hope to explore roles in this area in the future.</p>
+                <div>
+            </div>
+        </div>
+    </header>
+    <a href="" id="stackArticle"></a>
+    <article>
+        <section class="headerContent">
+            <h1 id="githubTitle">GitHub Statistics</h1>
+            <div id="githubStatsContainer">
+                <p>Username: <span id="githubUsername"></span></p>
+                <p>Public Repositories: <span id="githubRepositories"></span></p>
+                <p>Member Since: <span id="githubMemberYear"></span></p>
+            </div>
+        </section>
+    </article>
+    <h1 id="stackTitle">My Technology Stack</h1>
+    <h2 id="technologyName">Hover over an item below.</h2>
+    <article id="stackContainer">
+        <section data-value="HyperText Markup Language (HTML)">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/html5-19-722707.png" alt="HTML5 Logo" data-value="HyperText Markup Language (HTML)">
+        </section>
+        <section data-value="Cascading Style Sheets (CSS)">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png" alt="CSS Logo" data-value="Cascading Style Sheets (CSS)">
+        </section>
+        <section data-value="JavaScript">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo" data-value="JavaScript">
+        </section>
+        <section data-value="Node.js">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png" alt="Node.js Logo" data-value="Node.js">
+        </section>
+        <section data-value="Vue.js">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue.js Logo" data-value="Vue.js">
+        </section>
+        <section data-value="React">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo" data-value="React">
+        </section>
+        <section data-value="MySQL">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3628940-3030165.png" alt="MySQL Logo" data-value="MySQL">
+        </section>
+        <section data-value="PostgreSQL">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/postgresql-3521647-2945091.png" alt="PostgreSQL Logo" data-value="PostgreSQL">
+        </section>
+        <section data-value="Docker">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/docker-3521391-2944835.png" alt="Docker Logo" data-value="Docker">
+        </section>
+        <!-- <section data-value="Microsoft Azure">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/azure-1-190761.png" alt="Azure Logo" data-value="Microsoft Azure">
+        </section> -->
+        <section data-value="GitHub">
+            <img class="languageLogo" src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub Logo" data-value="GitHub">
+        </section>
+    </article>
+    <a href="" id="projectsArticle"></a>
+    <article>
+        <section class="headerContent">
+            <h1 id="projectsTitle">Projects</h1>
+        </section>
+    </article>
+    <article id="projectList">
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/stylus.png" alt="stylus browse page">
+            <section class="projectContent">
+                <h3 class="projectTitle">Stylus Record Manager</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Docker, Express, PostgreSQL, Discogs API</h4>
+                <p class="projectDescription">Vinyl collectors such as myself are always on the lookout for simple collection management solutions to help us 
+                    find out more about the music we've purchased. We often like to know what country a release comes from, how rare it is and how much it is worth.
+                    Stylus utilises the Discogs API to enable a user to search for and catalogue the items they own. The user's total collection value is then calculated.
+                    Some users may also wish to use Stylus to export their collection to a PDF or CSV.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/music_manager">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" id="habipadImg" src="./static/images/habipad.png" alt="habipad habits display page">
+            <section class="projectContent">
+                <h3 class="projectTitle">HabiPad Habit Tracker</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Docker, Express, Heroku, PostgreSQL</h4>
+                <p class="projectDescription">In recent years, there has been a renewed focus from the public on living a healthy lifestyle. 
+                    This often entails forming new habits such as sleeping 8 hours or drinking 2 litres of water each day. HabiPad was a
+                    group project aimed at providing a user with a platform to define and monitor a habit of their choosing. To track a habit, 
+                    the user must first create an account or login, enter their habit name and select a frequency (daily, weekly, monthly).
+                    Following successful habit creation, the user can then make frequent log entries towards their defined habit, dependent 
+                    on their chosen frequency. A streak is displayed next to the habit, encouraging the user to keep making log entries.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/Forum-123/Lap-2-Project-Server">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/streethub.png" alt="streethub home page">
+            <section class="projectContent">
+                <h3 class="projectTitle">StreetHub Community Journaling</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> Node.js, Express, Giphy API</h4>
+                <p class="projectDescription">Many communities use online community journalling platforms to promote events happening in their area. These platforms 
+                    may also be used to raise awareness of crimes or to advertise businesses. StreetHub was a group project and provides an anonymous posting solution 
+                    for members to share articles containing content of their choosing. Other users can then leave a comment on these posts, along with an optional GIF or emoji reaction.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/community_journaling">Take me to GitHub</a></h4>
+            </section>
+        </section>
+        <section class="projectItem">
+            <img class="projectImage" src="./static/images/petplus.png" alt="petplus add diagnosis page">
+            <section class="projectContent">
+                <h3 class="projectTitle">PetPlus Pet Care</h3>
+                <h4 class="projectLanguages"><span>Languages:</span> HTML, CSS, PHP, JavaScript</h4>
+                <h4 class="projectTools"><span>Technologies used:</span> MAMP, AWS, Alexa Developer Console</h4>
+                <p class="projectDescription">When going on holiday, pet owners are often faced with the difficult task of finding someone to care for their pet if the
+                    country they are travelling to does not allow animals from overseas to enter. The individual tasked with caring for the owner's pet may need to seek 
+                    veterinary advice which would usually require calling or emailing a vet and waiting for a response. PetPlus is a platform for vets to upload pet information
+                    which can be accessed by the carer through an Alexa skill. This information includes follow-up actions from previous treatments, diet plans and exercise routines.
+                    If a pet has been prescribed medication, dosage information can also be retrieved. PetPlus was developed for my university dissertation in conjunction with animal health 
+                    industry professionals.
+                </p>
+                <h4 class="projectLink">Find out more on GitHub: <a href="https://github.com/NXFORG/Final-Year-Project-Petplus">Take me to GitHub</a></h4>
+            </section>
+        </section>
+    </article>
+    <footer>
+        <p>2021 Chris Anstead</p>
+    </footer>
+</body>
+</html>

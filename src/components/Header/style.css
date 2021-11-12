@@ -1,0 +1,44 @@
+nav {
+    background-color: var(--dark-blue);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.navLink{
+    float: left;
+    background-color: var(--dark-blue);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navLink a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+.navLink a:hover, .navLink a:active {
+    border-bottom-color: #fff;
+    transition: border-bottom-color 0.5s ease-in;
+}
+
+.hamburger {
+  color: #fff;
+  font-size: 2em;
+  display: none;
+  text-align: left;
+  margin-left: 10px;
+}
