@@ -192,6 +192,7 @@ h1, h2, h3, h4 {
 
 #stackContainer > section:hover {
     background-color: var(--light-blue-grey);
+    border: 2px solid slategray;
 }
 
 #projectsTitle{
@@ -201,7 +202,7 @@ h1, h2, h3, h4 {
 
 .projectItem {
   display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
   column-gap: 20px;
   background-color: #fff;
   margin: 20px;
@@ -209,15 +210,19 @@ h1, h2, h3, h4 {
 }
 
 .projectImage {
-  max-width: 100%;
+  flex-basis: 40%;
+  width: 40%;
+  box-shadow: 2px 2px 5px grey;
 }
 
-#habipadImg{
-    margin-top: 20px;
+.projectContent {
+  vertical-align: middle;
 }
 
 .projectTitle, .projectLanguages, .projectTools, .projectLink {
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .projectLanguages > span, .projectTools > span, .projectLink {
@@ -226,7 +231,11 @@ h1, h2, h3, h4 {
 }
 
 .projectDescription {
-  padding-right: 10px;
+  border: 2px solid lightsteelblue;
+  padding: 10px;
+  margin-right: 20px;
+  height: 140px;
+  overflow: scroll;
 }
 
 footer {
