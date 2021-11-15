@@ -222,7 +222,7 @@ h1, h2, h3, h4 {
 .projectTitle, .projectLanguages, .projectTools, .projectLink {
   text-align: left;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .projectLanguages > span, .projectTools > span, .projectLink {
