@@ -140,7 +140,7 @@ h1, h2, h3, h4 {
   font-size: 1.2em;
 }
 
-#githubStatsContainer > p{
+#githubStatsContainer > p {
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
@@ -249,6 +249,11 @@ footer > p {
     text-align: center;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .footerLink a{
     text-decoration: none;
     color: #fff;
@@ -256,24 +261,27 @@ footer > p {
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
-  #introContent {
-    width: 60%;
+  body {
     background-color: rgba(180,180,200);
-    position: absolute;
-    top: 50vh;
-    left: 20%;
   }
 
-  #introPicture {
-    position: absolute;
-    max-width: 40%;
-    top: -25vh;
-    border-radius: 50%;
+  #introContent {
+    width: 90%;
+    background-color: rgba(180,180,200);
   }
 
   .introText {
     word-wrap: break-word;
     color: black;
+    font-size: 1em;
+  }
+
+  #languageCount {
+    font-size: 1em;
+  }
+
+  .projectImage {
+    display: none;
   }
 }
 
