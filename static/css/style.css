@@ -265,6 +265,10 @@ footer a {
     background-color: rgba(180,180,200);
   }
 
+  header {
+    height: 120vh;
+  }
+  
   #introContent {
     width: 90%;
     background-color: rgba(180,180,200);
